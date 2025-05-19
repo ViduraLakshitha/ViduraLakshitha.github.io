@@ -1,0 +1,9 @@
+[build]
+command = "cd client && npm install && npm run build"
+publish = "client/build"
+
+[build.environment]
+NODE_VERSION = "18"
+
+[site]
+bucket = "client/build" 
