@@ -33,6 +33,7 @@ jobs:
           npm run build
           touch build/.nojekyll
           cp build/index.html build/404.html
+          echo "ViduraLakshitha.github.io" > build/CNAME
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
