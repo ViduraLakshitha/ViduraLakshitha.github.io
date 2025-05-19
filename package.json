@@ -9,10 +9,20 @@
     "client": "cd client && npm start",
     "install-all": "npm install && cd client && npm install && cd ../server && npm install"
   },
-  "keywords": ["portfolio", "mern", "react", "node", "express", "mongodb"],
+  "keywords": [
+    "portfolio",
+    "mern",
+    "react",
+    "node",
+    "express",
+    "mongodb"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "nodemailer": "^7.0.3"
   }
-} 
+}
