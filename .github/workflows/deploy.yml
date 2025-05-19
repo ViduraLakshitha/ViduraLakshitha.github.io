@@ -33,7 +33,7 @@ jobs:
           npm run build
           touch build/.nojekyll
           cp build/index.html build/404.html
-          echo "viduralakshitha.github.io" > build/CNAME
+          echo "ViduraLakshitha.github.io" > build/CNAME
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
@@ -41,4 +41,5 @@ jobs:
           folder: client/build
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
-          clean: true 
+          clean: true
+          single-commit: true 
