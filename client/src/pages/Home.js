@@ -220,15 +220,15 @@ const Home = () => {
                 </motion.li>
               ))}
             </ul>
-          </motion.div>
-          <motion.div 
+        </motion.div>
+              <motion.div
             className="skill-card"
             whileHover={{ 
               scale: 1.05,
               boxShadow: "0 8px 16px rgba(0,0,0,0.2)"
             }}
-            transition={{ duration: 0.3 }}
-          >
+                transition={{ duration: 0.3 }}
+              >
             <div className="skill-icon">
               <BrushIcon fontSize="large" />
             </div>
@@ -241,7 +241,7 @@ const Home = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: 1 + index * 0.2 }}
                 >
-                  {skill}
+                    {skill}
                 </motion.li>
               ))}
             </ul>
@@ -249,7 +249,7 @@ const Home = () => {
         </div>
       </motion.section>
 
-    </motion.div>
+              </motion.div>
   );
 };
 

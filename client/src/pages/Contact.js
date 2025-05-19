@@ -160,16 +160,16 @@ const Contact = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
                       >
-                        <TextField
-                          required
-                          fullWidth
-                          label="Name"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleChange}
+                      <TextField
+                        required
+                        fullWidth
+                        label="Name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
                           whileFocus={{ scale: 1.02 }}
                           transition={{ duration: 0.2 }}
-                        />
+                      />
                       </motion.div>
                     </Grid>
                     <Grid item xs={12} sm={6}>
@@ -179,17 +179,17 @@ const Contact = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
                       >
-                        <TextField
-                          required
-                          fullWidth
-                          label="Email"
-                          name="email"
-                          type="email"
-                          value={formData.email}
-                          onChange={handleChange}
+                      <TextField
+                        required
+                        fullWidth
+                        label="Email"
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={handleChange}
                           whileFocus={{ scale: 1.02 }}
                           transition={{ duration: 0.2 }}
-                        />
+                      />
                       </motion.div>
                     </Grid>
                     <Grid item xs={12}>
@@ -199,18 +199,18 @@ const Contact = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
                       >
-                        <TextField
-                          required
-                          fullWidth
-                          label="Message"
-                          name="message"
-                          multiline
-                          rows={4}
-                          value={formData.message}
-                          onChange={handleChange}
+                      <TextField
+                        required
+                        fullWidth
+                        label="Message"
+                        name="message"
+                        multiline
+                        rows={4}
+                        value={formData.message}
+                        onChange={handleChange}
                           whileFocus={{ scale: 1.02 }}
                           transition={{ duration: 0.2 }}
-                        />
+                      />
                       </motion.div>
                     </Grid>
                     <Grid item xs={12}>

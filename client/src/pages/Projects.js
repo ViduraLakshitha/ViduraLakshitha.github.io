@@ -111,7 +111,7 @@ function Projects() {
           animate="visible"
         >
           {universityProjects.map((project, index) => (
-            <motion.div
+              <motion.div
               key={project.id}
               className="project-card"
               variants={itemVariants}
@@ -120,11 +120,11 @@ function Projects() {
                 boxShadow: "0 15px 40px rgba(0,0,0,0.2)", // Enhanced shadow
                 transition: { duration: 0.3 }
               }}
-            >
+              >
               {/* Removed image display as no images were provided in resume */}
               {/* <motion.img 
                 src={project.image} 
-                alt={project.title}
+                    alt={project.title}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -134,14 +134,14 @@ function Projects() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 + 0.2 }}
               >
-                {project.title}
+                      {project.title}
               </motion.h3>
               <motion.p
                 initial={{ opacity: 0, x: -30 }} // Increased initial x for description
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 + 0.3 }}
-              >
-                {project.description}
+                    >
+                      {project.description}
               </motion.p>
               {project.technologies.length > 0 && (
                 <motion.div 
@@ -163,31 +163,31 @@ function Projects() {
                     >
                       {tech}
                     </motion.span>
-                  ))}
+                      ))}
                 </motion.div>
               )}
               {/* Removed buttons as no links were provided in resume */}
               {/* <CardActions>
-                <Button
-                  size="small"
-                  startIcon={<GitHubIcon />}
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Code
-                </Button>
-                <Button
-                  size="small"
-                  startIcon={<LaunchIcon />}
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live Demo
-                </Button>
+                    <Button
+                      size="small"
+                      startIcon={<GitHubIcon />}
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Code
+                    </Button>
+                    <Button
+                      size="small"
+                      startIcon={<LaunchIcon />}
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live Demo
+                    </Button>
               </CardActions> */}
-            </motion.div>
+              </motion.div>
           ))}
         </motion.div>
       </Box>
