@@ -3,14 +3,6 @@ import {
   Box,
   Container,
   Typography,
-  Grid,
-  Card,
-  CardContent,
-  CardMedia,
-  CardActions,
-  Button,
-  Chip,
-  Stack,
 } from '@mui/material';
 import { motion } from 'framer-motion';
 // import GitHubIcon from '@mui/icons-material/GitHub';
