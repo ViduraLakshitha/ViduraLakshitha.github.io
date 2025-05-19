@@ -26,12 +26,12 @@ jobs:
         run: |
           cd client
           npm ci
-          chmod +x node_modules/.bin/react-scripts
 
       - name: Build
         run: |
           cd client
           npm run build
+          touch build/.nojekyll
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
