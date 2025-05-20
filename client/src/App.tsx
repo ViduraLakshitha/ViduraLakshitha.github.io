@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/ViduraLakshitha.github.io" future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <Router>
       <div className="App">
         <Navbar />
         <Routes>
